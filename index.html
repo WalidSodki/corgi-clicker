@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108254461-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-108254461-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Corgi Clicker</title>
+  <meta name="description" content="Corgi Clicker is a cozy corgi clicker game, how many precious corgis can you collect?">
+  <meta name="theme-color" content="pink">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="clicker.js"></script>
+  <link rel="stylesheet" href="./stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/500x500.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body onload="load()" onunload="save()">
+  <h1 id="main-title">Corgi Clicker</h1>
+  <div id="pointsDisplay">1 corgi</div>
+  <div id="CPS">0 corgis per second</div>
+  <div id="corgiDiv">
+    <img id="corgi" src="img/500x500.png" alt="Click the Corgi!" onClick="updateClickCount();">
+  </div>
+  <button id="upgradeButton" type="button" onClick="upgradeClick();">UPGRADE 40</button>
+  <button id="autoClickButton" type="button" onClick="autoClick();">AUTOCLICK 200</button>
+  <footer>
+    <p id="footer-text">made with <span id="heart">❤</span> by <a id="footer-link" href="http://walidsodki.com">Walid Sodki</a></p>
+  </footer>
+</body>
+
+</html>
